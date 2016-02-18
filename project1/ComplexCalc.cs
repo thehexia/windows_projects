@@ -1,8 +1,12 @@
+/*
+  (C) Hoang Nguyen
+*/
+
 using System.Numerics;
 
 namespace Calc
 {
-  
+
 public class ComplexCalc
 {
   // Returns the result of adding Complex number a to b.

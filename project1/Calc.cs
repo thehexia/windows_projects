@@ -1,3 +1,7 @@
+/*
+  (C) Hoang Nguyen
+*/
+
 using System;
 using System.Collections;
 using System.Reflection;
@@ -33,39 +37,44 @@ public class Calculator
   // Load the calculator dll and save all of its methods.
   private void LoadCalcDll(string dllName)
   {
-    asm = Assembly.Load(dllName);
-    if (asm == null) {
-      Console.WriteLine("Cannot find assembly " + dllName + ". Confirm this is in your current directory.");
-      return;
-    }
-
-    // Read through the dll and save all of its method info
-    foreach (var type in asm.GetTypes())
+    asm = null;
+    try
     {
-      // Install the add/subtract/mult/divide functions.
-      MethodInfo add = type.GetMethod("add");
-      if (add != null) {
-        options.Add(add);
-        ++numOptions;
-      }
+      asm = Assembly.Load(dllName);
 
-      MethodInfo sub = type.GetMethod("subtract");
-      if (sub != null) {
-        options.Add(sub);
-        ++numOptions;
-      }
+      // Read through the dll and save all of its method info
+      foreach (var type in asm.GetTypes())
+      {
+        // Install the add/subtract/mult/divide functions.
+        MethodInfo add = type.GetMethod("add");
+        if (add != null) {
+          options.Add(add);
+          ++numOptions;
+        }
 
-      MethodInfo mul = type.GetMethod("multiply");
-      if (mul != null) {
-        options.Add(mul);
-        ++numOptions;
-      }
+        MethodInfo sub = type.GetMethod("subtract");
+        if (sub != null) {
+          options.Add(sub);
+          ++numOptions;
+        }
 
-      MethodInfo div = type.GetMethod("divide");
-      if (div != null) {
-        options.Add(div);
-        ++numOptions;
+        MethodInfo mul = type.GetMethod("multiply");
+        if (mul != null) {
+          options.Add(mul);
+          ++numOptions;
+        }
+
+        MethodInfo div = type.GetMethod("divide");
+        if (div != null) {
+          options.Add(div);
+          ++numOptions;
+        }
       }
+    }
+    catch (Exception e)
+    {
+      Console.WriteLine("ERROR.");
+      Console.WriteLine("{0} Exception caught.", e);
     }
   }
 
@@ -84,10 +93,10 @@ public class Calculator
       Console.WriteLine();
       Console.WriteLine("=== " + type.ToString() + " ===");
       // Install the add/subtract/mult/divide functions.
-      Console.WriteLine("(" + i++ + ") " + type.GetMethod("add").ToString());
-      Console.WriteLine("(" + i++ + ") " + type.GetMethod("subtract").ToString());
-      Console.WriteLine("(" + i++ + ") " + type.GetMethod("multiply").ToString());
-      Console.WriteLine("(" + i++ + ") " + type.GetMethod("divide").ToString());
+      Console.WriteLine("Method (" + i++ + "): " + type.GetMethod("add").ToString());
+      Console.WriteLine("Method (" + i++ + "): " + type.GetMethod("subtract").ToString());
+      Console.WriteLine("Method (" + i++ + "): " + type.GetMethod("multiply").ToString());
+      Console.WriteLine("Method (" + i++ + "): " + type.GetMethod("divide").ToString());
     }
   }
 
@@ -99,7 +108,7 @@ public class Calculator
       ReflectCalcDll();
 
       Console.WriteLine();
-      Console.WriteLine("Which operation would you like to run? (Ctrl + C to quit.)");
+      Console.WriteLine("Which operation would you like to run? (Pick: 0-7) (Ctrl + C to quit.)");
       // Try to parse a mode the user input.
       int op;
       if (int.TryParse(Console.ReadLine(), out op)) {
@@ -272,8 +281,15 @@ public class Calculator
   {
     Console.WriteLine("===== Console Calculator =====");
 
-    Calculator calc = new Calculator("WCalc");
-    calc.start();
+    Calculator calc = new Calculator("WPCalc");
+    try
+    {
+      calc.start();
+    }
+    catch (Exception e)
+    {
+      Console.WriteLine("{0} Exception caught.", e);
+    }
     // Ctrl + c to end.
   }
 }

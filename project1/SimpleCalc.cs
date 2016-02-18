@@ -1,3 +1,7 @@
+/*
+  (C) Hoang Nguyen
+*/
+
 using System;
 using System.Numerics;
 
