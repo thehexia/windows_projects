@@ -1,6 +1,3 @@
-namespace Calc
-{
-
 public class cFloat
 {
   float real;
@@ -33,7 +30,7 @@ public class cFloat
 }
 
 
-interface iSimpleCalc
+public interface iSimpleCalc
 {
   float add (float f1, float f2);
   float subtract (float f1, float f2);
@@ -41,12 +38,10 @@ interface iSimpleCalc
   float divide (float f1, float f2);
 }
 
-interface iComplexCalc
+public interface iComplexCalc
 {
   cFloat add (cFloat c1, cFloat c2);
   cFloat subtract (cFloat c1, cFloat c2);
   cFloat multiply (cFloat c1, cFloat c2);
   cFloat divide (cFloat c1, cFloat c2);
 }
-
-} // end namespace calc

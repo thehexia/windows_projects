@@ -1,0 +1,4 @@
+c:\users\hoang\documents\visual studio 2012\Projects\CalcStudio\CalcStudio\bin\CalcStudio.dll
+c:\users\hoang\documents\visual studio 2012\Projects\CalcStudio\CalcStudio\bin\CalcStudio.pdb
+c:\users\hoang\documents\visual studio 2012\Projects\CalcStudio\CalcStudio\obj\Debug\CalcStudio.dll
+c:\users\hoang\documents\visual studio 2012\Projects\CalcStudio\CalcStudio\obj\Debug\CalcStudio.pdb

@@ -1,5 +1,3 @@
-using Calc;
-
 public class ComplexCalc : iComplexCalc
 {
   // Returns the result of adding Complex number a to b.

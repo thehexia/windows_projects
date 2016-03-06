@@ -1,5 +1,3 @@
-using Calc;
-
 public class SimpleCalc : iSimpleCalc
 {
   // Returns the result of adding a and b.
