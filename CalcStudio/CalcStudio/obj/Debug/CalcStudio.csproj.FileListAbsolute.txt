@@ -8,3 +8,13 @@ c:\users\hoang nguyen\documents\visual studio 2012\Projects\CalcStudio\CalcStudi
 c:\users\hoang nguyen\documents\visual studio 2012\Projects\CalcStudio\CalcStudio\obj\Debug\CalcStudio.pdb
 C:\Users\Hoang Nguyen\Documents\Visual Studio 2012\Projects\CalcStudio\CalcStudio\obj\Debug\CalcStudio.CalcForm.resources
 C:\Users\Hoang Nguyen\Documents\Visual Studio 2012\Projects\CalcStudio\CalcStudio\obj\Debug\CalcStudio.Calculator.resources
+C:\Users\Hoang Nguyen\Desktop\windows_projects\CalcStudio\CalcStudio\bin\Debug\CalcStudio.exe.config
+C:\Users\Hoang Nguyen\Desktop\windows_projects\CalcStudio\CalcStudio\obj\Debug\CalcStudio.exe
+C:\Users\Hoang Nguyen\Desktop\windows_projects\CalcStudio\CalcStudio\obj\Debug\CalcStudio.pdb
+C:\Users\Hoang Nguyen\Desktop\windows_projects\CalcStudio\CalcStudio\bin\Debug\CalcStudio.exe
+C:\Users\Hoang Nguyen\Desktop\windows_projects\CalcStudio\CalcStudio\bin\Debug\CalcStudio.pdb
+C:\Users\Hoang Nguyen\Desktop\windows_projects\CalcStudio\CalcStudio\obj\Debug\CalcStudio.csprojResolveAssemblyReference.cache
+C:\Users\Hoang Nguyen\Desktop\windows_projects\CalcStudio\CalcStudio\obj\Debug\CalcStudio.Calculator.resources
+C:\Users\Hoang Nguyen\Desktop\windows_projects\CalcStudio\CalcStudio\obj\Debug\CalcStudio.CalcForm.resources
+C:\Users\Hoang Nguyen\Desktop\windows_projects\CalcStudio\CalcStudio\obj\Debug\CalcStudio.Properties.Resources.resources
+C:\Users\Hoang Nguyen\Desktop\windows_projects\CalcStudio\CalcStudio\obj\Debug\CalcStudio.csproj.GenerateResource.Cache
