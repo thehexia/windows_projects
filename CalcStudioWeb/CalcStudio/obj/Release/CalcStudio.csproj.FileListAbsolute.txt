@@ -3,3 +3,8 @@ c:\users\hoang\documents\visual studio 2012\Projects\CalcStudio\CalcStudio\bin\C
 c:\users\hoang\documents\visual studio 2012\Projects\CalcStudio\CalcStudio\obj\Release\CalcStudio.dll
 c:\users\hoang\documents\visual studio 2012\Projects\CalcStudio\CalcStudio\obj\Release\CalcStudio.pdb
 c:\users\hoang\documents\visual studio 2012\Projects\CalcStudio\CalcStudio\obj\Release\CalcStudio.csprojResolveAssemblyReference.cache
+C:\Users\Hoang\Git\windows_projects\CalcStudioWeb\CalcStudio\bin\CalcStudio.dll
+C:\Users\Hoang\Git\windows_projects\CalcStudioWeb\CalcStudio\bin\CalcStudio.pdb
+C:\Users\Hoang\Git\windows_projects\CalcStudioWeb\CalcStudio\obj\Release\CalcStudio.csprojResolveAssemblyReference.cache
+C:\Users\Hoang\Git\windows_projects\CalcStudioWeb\CalcStudio\obj\Release\CalcStudio.dll
+C:\Users\Hoang\Git\windows_projects\CalcStudioWeb\CalcStudio\obj\Release\CalcStudio.pdb
